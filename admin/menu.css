@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, nav{
+    margin: 5px 10%;
+}
+h1{
+    text-align: center;
+}
+
+nav{
+    background: #484848;
+    height: 50px;
+    border-radius: 5px;
+}
+nav ul{
+    position: relative;
+    height: 50px;
+}
+/*dàn hàng ngang; các phần tử li tiếp theo bám theo các li phía trước*/
+nav ul li{
+    float: left;
+    list-style: none;
+    border-right: 1px solid #ccc;
+    border-left:1px solid #333;
+}
+nav ul li a{
+    display: block; 
+    padding: 0 25px;
+    line-height: 50px;
+    color: #f1f2f3;
+    text-decoration: none;
+}
+/*bỏ đường kẻ bên trái của phần tử li đầu tiên*/
+nav ul li:first-child {
+    border-left: none;
+}
+nav> ul li:first-child a{
+    border-left: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+nav ul li:hover>a{
+    background: red;
+    opacity: .7;
+    color: yellow;
+}
+/*menu con*/
+nav li>ul{
+    display: none; /* ban đầu ẩn menu con */
+    width: 280px;
+    position: absolute;
+}
+nav li>ul li{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+}
+
+.btn-dang-xuat {
+    margin: 5px 10%;
+    cursor: pointer;
+    color: blue;
+}
+
+.btn-dang-xuat:hover {
+    color: black;
+}
